@@ -11,7 +11,7 @@ SRC_URI += " \
 "
 
 DEPENDS = " bash"
-RDEPENDS_${PN} = "bash sudo"
+RDEPENDS_${PN} = "bash sudo nbctl"
 RDEPENDS_${PN}-dev = "bash sudo"
 
 inherit go pkgconfig
