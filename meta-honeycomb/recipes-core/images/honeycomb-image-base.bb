@@ -6,7 +6,7 @@ require recipes-core/images/core-image-base.bb
 IMAGE_FEATURES += " \
                    tools-debug \
                    tools-sdk \
-                   ssh-server-dropbear \
+                   ssh-server-openssh \
                    package-management \
                    doc-pkgs \
 "

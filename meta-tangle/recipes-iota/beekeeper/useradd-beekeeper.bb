@@ -37,3 +37,8 @@ do_install () {
 FILES_${PN} = "${exec_prefix}/* /home/*"
 
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
+
+pkg_postinst_ontarget_${PN}(){
+    chage -d 0 root
+    chage -d 0 beekeeper
+}
